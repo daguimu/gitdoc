@@ -1,6 +1,10 @@
 # GitDoc
 
-一个以 GitHub 为存储后端的个人文档管理系统。通过现代化的 Web 编辑器，在浏览器中直接创建、编辑和管理你 GitHub 仓库中的文件。
+一个以 GitHub 为存储后端的个人文档管理系统。
+
+GitDoc 是一个纯前端工具 —— 服务端不存储任何用户数据，你的所有文档始终保存在你自己的 GitHub 仓库中，完全由你掌控。GitDoc 只是提供了一个更友好的 Web 编辑器界面，让你可以在浏览器中直接创建、编辑和管理 GitHub 仓库中的文件，无需使用 Git 命令行或 GitHub 网页端的繁琐操作。
+
+你可以直接使用在线站点 **[https://gitdoc.dagm.com](https://gitdoc.dagm.com)** 作为你的 GitHub 文档管理工具，无需自行部署；也可以自行部署到你自己的服务器上。
 
 [English](./README.md)
 

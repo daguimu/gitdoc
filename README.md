@@ -1,6 +1,10 @@
 # GitDoc
 
-A personal document management system powered by GitHub. Use your GitHub repositories as a document storage backend, with a modern web-based editor for creating, editing, and managing files — all through an intuitive UI.
+A personal document management system powered by GitHub.
+
+GitDoc is a pure frontend tool — the server stores no user data whatsoever. All your documents remain in your own GitHub repositories, fully under your control. GitDoc simply provides a friendlier web editor interface, allowing you to create, edit, and manage files in your GitHub repos directly from the browser — no Git CLI or clunky GitHub web UI required.
+
+You can use the hosted version at **[https://gitdoc.dagm.com](https://gitdoc.dagm.com)** as your GitHub document manager right away, no deployment needed. Or you can self-host it on your own server.
 
 [中文文档](./README_zh.md)
 
