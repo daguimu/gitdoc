@@ -1,0 +1,33 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Editor & Tools
+.vscode/
+.idea/
+.claude/
+*.sw?
+.DS_Store
+
+# OS
+Thumbs.db
+
+# Keys & Certificates
+*.pem
+*.key
+*_rsa
+*_dsa

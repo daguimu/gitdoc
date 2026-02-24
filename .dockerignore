@@ -1,0 +1,10 @@
+**/node_modules
+**/dist
+frontend/public/vditor
+**/__pycache__
+**/.venv
+**/.env
+**/.git
+**/.DS_Store
+*.pyc
+*.pyo

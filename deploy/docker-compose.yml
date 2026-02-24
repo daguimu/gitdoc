@@ -1,0 +1,25 @@
+services:
+  gitdoc:
+    image: gitdoc:latest
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      args:
+        NODE_IMAGE: ${NODE_IMAGE:-node:22-alpine}
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim}
+        NPM_REGISTRY: ${NPM_REGISTRY:-https://registry.npmjs.org}
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://pypi.org/simple}
+    ports:
+      - "${SERVER_PORT:-8080}:8080"
+    environment:
+      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:8080}
+      - TZ=${TZ:-Asia/Shanghai}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
